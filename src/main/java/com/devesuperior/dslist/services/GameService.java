@@ -5,10 +5,11 @@ import com.devesuperior.dslist.entities.Game;
 import com.devesuperior.dslist.repositories.GameRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Component
+@Service
 public class GameService {
 
     @Autowired
@@ -16,9 +17,8 @@ public class GameService {
 
 
     public List<Game> findAll(){
-
-    List<Game> result = gameRepository.findAll();
-        return result;
+        List<Game> result = gameRepository.findAll();
+            return result;
     }
 
 
