@@ -1,7 +1,7 @@
 package com.devesuperior.dslist.entities;
 
 import jakarta.persistence.*;
-import org.springframework.boot.autoconfigure.web.WebProperties;
+
 
 import java.util.Objects;
 @Entity
